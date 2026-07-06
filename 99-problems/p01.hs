@@ -1,6 +1,10 @@
 module Main (main) where
 
 main :: IO ()
--- main = print (myLast [1, 2, 3, 4 :: Int])
-main = do
-  putStrLn "hello world"
+
+myLast :: [a] -> Maybe a
+myLast [] = Nothing
+myLast [x] = Just x
+myLast (_:rest) =  myLast rest
+
+main = print (myLast [1, 2, 3, 4 :: Int])

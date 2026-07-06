@@ -38,6 +38,26 @@ executable p01
   hs-source-dirs:      99-problems
   main-is:             p01.hs
 
+executable p02
+  import:              warnings
+  hs-source-dirs:      99-problems
+  main-is:             p02.hs
+
+executable p03
+  import:              warnings
+  hs-source-dirs:      99-problems
+  main-is:             p03.hs
+
+executable p04
+  import:              warnings
+  hs-source-dirs:      99-problems
+  main-is:             p04.hs
+
+executable p05
+  import:              warnings
+  hs-source-dirs:      99-problems
+  main-is:             p05.hs
+
 source-repository head
   type:     git
   location: https://github.com/githubuser/learn-haskell
